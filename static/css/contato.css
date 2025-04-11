@@ -1,0 +1,117 @@
+body {
+    background-image: url("/static/imagem/fundo-contato.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+}
+
+.orange {
+    color: #0cc0df;
+}
+
+.form-container {
+    margin: 30px;
+    background-color: white;
+    padding: 30px;
+    border-left: 5px solid #0cc0df;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+    display: block;
+    color: #055e68;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-container .form .input,
+.form-container .form .textarea {
+    color: #055e68;
+    width: 100%;
+    background-color: #e6f9fb;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-left: 3px solid transparent;
+    transition: border-left 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.form-container .form .input:focus,
+.form-container .form .textarea:focus {
+    border-left: 5px solid #0cc0df;
+    background-color: #d2f3f7;
+}
+
+
+
+.form-container .form .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.send-button {
+    flex-basis: 70%;
+    background: #0cc0df;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.send-button:hover {
+    background: white;
+    color: #0cc0df;
+    border: 1px solid #0cc0df;
+}
+
+.reset-button-container {
+    filter: drop-shadow(1px 1px 0px #ccc);
+    flex-basis: 30%;
+}
+
+.reset-button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #0cc0df;
+    font-weight: bold;
+    background: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #0cc0df;
+}
+
+.reset-button:hover {
+    background: #0cc0df;
+    color: white;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center !important;
+    padding: 0 !important;
+}
+
+.contato{
+    padding-bottom: 7% !important;
+    padding-top: 7% !important;
+}
+
+.textarea{
+    max-height: 150px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 60%;
+    }
+
+
+}
