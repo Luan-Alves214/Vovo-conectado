@@ -1,0 +1,18 @@
+
+
+.input {
+    font-size: 16px;
+    padding: 2px 10px 2px 10px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid Black;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+
+
